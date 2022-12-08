@@ -58,6 +58,8 @@ class InstructionView(arcade.View):
         game_view.setup()
         self.window.show_view(game_view)
 
+
+##This inherits from arcade.Sprite class
 class PlayerCharacter(arcade.Sprite):
     def __init__(self):
 
@@ -133,7 +135,7 @@ class MyWindow(arcade.View):
         self.player.center_x = SCREEN_WIDTH // 2
         self.player.center_y = SCREEN_HEIGHT // 2
         self.player.scale = 0.8
-        self.player.change_x = 1
+        self.player.change_x = 2
 
         self.player_list.append(self.player)
 
